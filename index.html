@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <article class="card" data-testid="test-profile-card">
+        <div>
+            <figure class="image">
+                <img src="./assets/image/PROF pic.jpg" alt="avatar picture" class="profile-pic"
+                    data-testid="test-user-avatar" />
+            </figure>
+            <ul class="social-icons " aria-label="Social links" data-testid="test-user-social-links">
+                <li class="social-icon" data-testid="test-user-social-linkedin">
+                    <a href="https://www.linkedin.com/in/nofisatibrahim/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Go to LinkedIn">
+
+                        <img src="./assets/icon/linkedin.png" alt="linkedin icon" width="30px" height="30px">
+
+                    </a>
+                </li>
+                <li class="social-icon" data-testid="test-user-social-Github"> <a href="https://github.com/Nahfeesah" target="_blank"
+                        aria-label="Go to Github page">
+
+                        <img src="./assets/icon/github.png" alt="linkedin icon" width="30px" height="30px">
+
+                    </a></li>
+                <li class="social-icon"> <a href="https://ibrahim-nofisat-portfolio.vercel.app/" target="_blank"
+                        aria-label="Go to Portfolio page">
+                        
+                        <img src="./assets/icon/portfolio.png" alt="linkedin icon" width="30px" height="30px">
+                       
+                    </a></i></li>
+                <li class="social-icon"> <a href="https://ibrahim-nofisat-portfolio.vercel.app/" target="_blank"
+                        aria-label="Go to Twitter page">
+                        
+                        <img src="./assets/icon/twitter.png" alt="linkedin icon" width="30px" height="30px">
+                       
+                    </a></li>
+            </ul>
+             <div class="time">
+
+            <p>Current time:</p>
+             <p data-testid="test-user-time"></p>
+             </div>
+        </div>
+        <div>
+            <header>
+                <h2 class="name" data-testid="test-user-name" aria-label="User name">Ibrahim Nofisat</h2>
+            </header>
+            <p class="bio" data-testid="test-user-bio">
+               Passionate Frontend Developer and <br> tech enthusiast, open to opportunities <br> where I can contribute, learn, and grow.
+            </p>
+            
+            <div class="info">
+                <section>
+                    <h3  class="visually-hidden">Hobbies</h3>
+                    <ul class="hobbies" data-testid="test-user-hobbies">
+                        <li>Coding</li>
+                        <li>Movies</li>
+                        <li>Singing</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3  class="visually-hidden">Dislikes</h3>
+                    <ul class="dislikes" data-testid="test-user-dislikes">
+                        <li>Insects</li>
+                        <li>Liars</li>
+                        <li>Dirt</li>
+                    </ul>
+                </section>
+            </div>
+           
+        </div>
+    </article>
+</body>
+<script src="script.js"></script>
+
+</html>
