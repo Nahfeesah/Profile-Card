@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <main class="main">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About-Me.html">About Me</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <article class="card" data-testid="test-profile-card">
         <div>
             <figure class="image">
@@ -45,8 +54,8 @@
             </ul>
              <div class="time">
 
-            <p>Current time:</p>
-             <p data-testid="test-user-time"></p>
+                <p>Current time:</p>
+                <p data-testid="test-user-time" id="time"></p>
              </div>
         </div>
         <div>
@@ -76,9 +85,11 @@
                 </section>
             </div>
            
+
         </div>
     </article>
+    </main>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>

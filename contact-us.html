@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About-Me.html">About Me</a></li>
+          <li><a href="Contact-Us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <main class="contact">
+        <form class="card" data-testid="test-contact-form" id="contact-form" novalidate>
+          <div class="contact-container">
+            <h2 class="contact-heading">Contact Us</h2>
+            <div class="form-group">
+              <label for="name">Full Name</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                data-testid="test-contact-name"
+                required
+                placeholder="Enter your full name"
+                data-error="Name cannot be empty"
+                aria-describedby="name-error"
+              /><br />
+              <span class="error-message" data-testid="test-contact-error-name" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                data-testid="test-contact-email"
+                required
+                placeholder="your@email.com"
+                data-error="Please enter a valid email address"
+              /><br />
+                <span class="error-message" data-testid="test-contact-error-email" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                data-testid="test-contact-subject"
+                required
+                placeholder="Topic of your message"
+                data-error="Subject cannot be empty"
+              /><br />
+                <span class="error-message" data-testid="test-contact-error-subject" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label><br />
+              <textarea
+                id="message"
+                name="message"
+                data-testid="test-contact-message"
+                required
+                placeholder="Type your message here..."
+                minlength="10"
+                cols="10"
+                rows="5"
+                data-error="Message must be at least 10 characters"
+                aria-describedby="message-error"
+              ></textarea>
+                <br />
+                <span class="error-message" data-testid="test-contact-error-message" aria-live="polite"></span>
+            </div>
+            
+            <div
+              class="contact-success"
+              data-testid="test-contact-success-message"
+            ></div>
+            <button
+              data-testid="test-contact-submit"
+              class="contact-submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
