@@ -33,9 +33,7 @@ function validateField(field) {
 
 form.addEventListener("submit", async function (event) {
     event.preventDefault();
-    const submitButton = form.querySelector('[data-testid="test-contact-submit"]');
-    submitButton.disabled = true;
-    submitButton.textContent = 'Submitting...';
+    
 
     const fields = form.querySelectorAll("input, textarea");
     let isValid = true;
@@ -55,8 +53,7 @@ form.addEventListener("submit", async function (event) {
         }
     }
     
-    submitButton.disabled = false;
-    submitButton.textContent = 'Submit';
+    
 });
     form.querySelectorAll("input, textarea").forEach(field => {
         field.addEventListener("blur", () => validateField(field));
