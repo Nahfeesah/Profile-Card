@@ -9,6 +9,9 @@ A responsive profile card implementation that displays personal information, soc
 - Accessible keyboard navigation
 - Lists of hobbies and dislikes
 - Professional profile information display
+- About Me page 
+- Contact us Page
+
 
 ## Running Locally
   Open the index.html file directly in your web browser.
