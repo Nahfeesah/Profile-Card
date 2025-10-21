@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const timeElement = document.getElementById("time")
 function updateTime() {
     const now = new Date();
+    // const timeString =Date.now()
    const hours = String(now.getHours()).padStart(2, "0");
     const minutes = String(now.getMinutes()).padStart(2, "0");
     const seconds = String(now.getSeconds()).padStart(2, "0");
@@ -53,6 +54,9 @@ form.addEventListener("submit", async function (event) {
             }, 2000); 
         }
     }
+    
+    submitButton.disabled = false;
+    submitButton.textContent = 'Submit';
 });
     form.querySelectorAll("input, textarea").forEach(field => {
         field.addEventListener("blur", () => validateField(field));
